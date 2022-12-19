@@ -1,15 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-/**
- */
+
 int main(void)
 {
-int num;
-
-srand(time(0));
-num = rand();
-printf("%i\n", num);
-return (0);
+	int sum;
+	char i;
+	srand(time(NULL));
+	sum = 0;
+	while (sum <= 2645)
+	{
+		i = rand() % 128;
+		sum += i;
+		putchar(i);
+	}
+	putchar(2772 - sum);
+	return (0);
 }
