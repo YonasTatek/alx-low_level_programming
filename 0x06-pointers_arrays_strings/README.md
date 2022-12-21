@@ -1,0 +1,1 @@
+pointer array string part 2
